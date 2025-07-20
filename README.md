@@ -10,15 +10,7 @@ This repo contains my personal solutions to LeetCode problems, focused on improv
 ## 🗂️ Topics Covered
 
 - ✅ Arrays
-- ✅ Strings
-- ✅ Hash Maps & Sets
-- ✅ Linked Lists
-- ✅ Stacks & Queues
-- ✅ Trees & Graphs
-- ✅ Recursion & Backtracking
-- ✅ Sliding Window
-- ✅ Binary Search
-- ✅ Dynamic Programming (DP)
+
 
 ---
 
