@@ -4,25 +4,29 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int max = Integer.MIN_VALUE;
-        for ( int i =0; i< candies.length; i++){
-            if(candies[i]>max){
-                max= candies[i];
+        for ( int i : candies){
+            if(i>max){
+                max =i;
             }
         }
 
-        
-    List<Boolean> result  = new ArrayList<>();
-     for ( int i =0; i< candies.length; i++){
-            if ( candies [i] + extraCandies >=  max){
-                result.add(true);
+       
+    
+    List<Boolean> res  = new ArrayList<>();
+     for ( int i : candies){
+            if ( i + extraCandies >=  max){
+                res.add(true);
             }
             else{
-                result.add(false);
+                res.add(false);
+
             }
+
             
         }
-        return result;
+        return res;
 }   }
