@@ -1,3 +1,4 @@
+package BinarySearch;
 
 // https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
 public class InfiniteArray {
@@ -6,24 +7,25 @@ public class InfiniteArray {
                 100, 130, 140, 160, 170};
         int target = 10;
         System.out.println(ans(arr, target));
-  }
-    static int ans(int[] arr, int target){
-        // first find the range
-        // first start with a box of size 2
+    }
+    static int ans(int [] arr , int target){
         int start = 0;
+        
         int end = 1;
 
-        // condition for the target to lie in the range
-        while (target > arr[end]) {
-            int temp = end + 1; // this is my new start
-            // double the box value
-            // end = previous end + sizeofbox*2
-            end = end + (end - start + 1) * 2;
-            start = temp;
+        // check for target is greater then end 
+        while (target>arr[end]) {
+            int temp =end +1;
+            end = end + (end - start +1)*2;
+            start=temp;
+
+            
         }
-        return binarySearch(arr, target, start, end);
-    
+        return binarySearch(arr , target , start ,end);
     }
+
+   
+    
   
     static int binarySearch(int[] arr, int target, int start, int end) {
         while(start <= end) {
